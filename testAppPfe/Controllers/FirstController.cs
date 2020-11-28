@@ -9,13 +9,14 @@ namespace testAppPfe.Controllers
     public class FirstController : Controller
     {
         // GET: First
-        private static readonly string[] Numbers = new[]
-        {
-           "1","2","3"
-        };
+     
 
         public IEnumerable<string> Create()
         {
+            string[] Numbers = new[]
+        {
+           "1","2","3"
+        };
             return Numbers;
         }
         public ActionResult Index()
